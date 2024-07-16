@@ -1,0 +1,112 @@
+/* styles.css */
+:root{
+    --dark: #374151;
+    --darker: #181d22;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light:#EEE;
+    --pink:#EC4899;
+    --purple:#8B5Cf6;
+    --red:#f73d37;
+}
+body {
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #24292e;
+    background-image: linear-gradient(to right #24292e, #2b3137 800px);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+
+     /* background-image: linear-gradient(to right, var(--pink),var(--purple), var(--red)); */
+     /* -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; */
+}
+
+.upload-form {
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#image-input {
+    flex: 1 1 0%;
+    width: 29rem;
+    background-color: var(--darker);
+    border-style: outset;
+    border: 0.3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1rem;
+}
+#process-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* #process-button:hover {
+    background-color: #ffab3e;
+} */
+#process-button:hover{
+    opacity: 0.6;
+    background-color: #ffab3e;
+}
+#process-button:active{
+    opacity: 0.6;
+}
+
+#result-container {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 6px #eee;
+}
+
+.box {
+    margin: 10px 0;
+}
+
+.box p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.box strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Style the extracted data */
+#result-name,
+#result-email,
+#result-phone {
+    color: #0c0c0c; /* Dark gray for extracted data */
+    font-weight: 100px;
+}
